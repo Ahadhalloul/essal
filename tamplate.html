@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- -------------- main style ------------- -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- --------------Start sidebar menu ------------- -->
+      <div class="sidebar-container">
+        <div class="sidebar" id="sidebar-open">
+          <!-- menu collapse icon -->
+          <div class="collapse-icon" onclick="collapseSidebar()">
+            <img src="assets/icons/Collapse Nav bar.svg" alt="" />
+          </div>
+          <!-- --------- -->
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="esaal logo" />
+            <img src="assets/icons/horizontal-line.svg" alt="" />
+          </div>
+          <!----- first nav ----->
+          <div class="nav-list">
+            <a class="flex-row" href="#">
+              <div class="flex-row nav-container">
+                <img src="assets/icons/setting.svg" alt="" />
+                <p>New Chat</p>
+              </div>
+              <img src="assets/icons/arrow-down.svg" alt="" />
+            </a>
+            <a class="flex-row active-nav" href="#">
+              <div class="flex-row nav-container">
+                <img src="assets/icons/setting.svg" alt="" />
+                <p>Recent chat</p>
+              </div>
+              <img src="assets/icons/arrow-down.svg" alt="" />
+            </a>
+
+            <a class="flex-row" href="#">
+              <div class="flex-row nav-container">
+                <img src="assets/icons/setting.svg" alt="" />
+                <p>Chat History</p>
+              </div>
+              <img src="assets/icons/arrow-down.svg" alt="" />
+            </a>
+            <a class="flex-row" href="#">
+              <div class="flex-row nav-container">
+                <img src="assets/icons/setting.svg" alt="" />
+                <p>FAQ</p>
+              </div>
+              <img src="assets/icons/arrow-down.svg" alt="" />
+            </a>
+            <a class="flex-row" href="#">
+              <div class="flex-row nav-container">
+                <img src="assets/icons/setting.svg" alt="" />
+                <p>Support</p>
+              </div>
+              <img src="assets/icons/arrow-down.svg" alt="" />
+            </a>
+            <a class="flex-row" href="#">
+              <div class="flex-row nav-container">
+                <img src="assets/icons/setting.svg" alt="" />
+                <p>Setting</p>
+              </div>
+              <img src="assets/icons/arrow-down.svg" alt="" />
+            </a>
+            <a class="flex-row" href="#">
+              <div class="flex-row nav-container">
+                <img src="assets/icons/setting.svg" alt="" />
+                <p>My Account</p>
+              </div>
+              <img src="assets/icons/arrow-down.svg" alt="" />
+            </a>
+          </div>
+          <!----- second nav ----->
+          <div class="nav-list bottom-nav">
+            <a class="flex-row nav-container" href="#">
+              <img src="assets/icons/Icon-Wrench.svg" alt="" />
+              <p>Help & Support</p>
+            </a>
+            <a class="flex-row nav-container" href="#">
+              <img src="assets/icons/eye.svg" alt="" />
+              <p>Terms & Conditions</p>
+            </a>
+            <a class="flex-row nav-container" href="#">
+              <img src="assets/icons/file.svg" alt="" />
+              <p>Privacy Policies</p>
+            </a>
+          </div>
+        </div>
+        <!-- ----start collapsed sidebar-------- -->
+        <div class="collapsed-sidebar hide" id="sidebar-collapsed">
+          <div class="collapsed-icon" onclick="openSidebar()">
+            <img src="assets/icons/Collapse Nav bar.svg" alt="" />
+          </div>
+          <div class="logo">
+            <img src="assets/images/small-logo-blue.png" alt="" />
+            <img src="assets/icons/line-dark.svg" alt="" />
+          </div>
+          <a href="#" class="active-nav">
+            <img src="assets/icons/settings-wheel.svg" alt=""
+          /></a>
+          <a href="#"> <img src="assets/icons/settings-wheel.svg" alt="" /></a>
+          <a href="#"> <img src="assets/icons/settings-wheel.svg" alt="" /></a>
+          <a href="#"> <img src="assets/icons/settings-wheel.svg" alt="" /></a>
+          <a href="#"> <img src="assets/icons/settings-wheel.svg" alt="" /></a>
+          <a href="#"> <img src="assets/icons/settings-wheel.svg" alt="" /></a>
+          <a href="#"> <img src="assets/icons/settings-wheel.svg" alt="" /></a>
+        </div>
+        <!-- ------end collapsed side bar --------- -->
+      </div>
+      <!-- --------------End side bar menu --- -------->
+
+      <!-- ------------------ start header ---------------------- -->
+      <header class="header">
+        <h3>New Chat Title</h3>
+        <div class="user-nav">
+          <div class="user-name flex-row">
+            <img
+              class="user-img"
+              src="assets/images/profile-pic.png"
+              alt="user image"
+            />
+            <h4>Muhammed Almajd</h4>
+            <img src="assets/icons/arrow-down-.svg" alt="" />
+          </div>
+          <img src="assets/icons/bell.svg" alt="" />
+          <img src="assets/icons/line.svg" alt="" />
+          <div class="language flex-row">
+            <img src="assets/icons/world.svg" alt="" />
+            <p>English</p>
+            <img src="assets/icons/arrow-down.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <!-- ------------------ end header ---------------------- -->
+
+      <!-- ------------------ start main ---------------------- -->
+      <main>
+        <div class="dashboard-content">
+          <div class="chat-path">
+            <span>
+              <img src="/assets/icons/back-arrow.svg" alt="" />
+            </span>
+            <a href="">
+              <span class="active-path">New Chat</span>
+            </a>
+          </div>
+
+          <div class="chat-container"></div>
+        </div>
+      </main>
+      <!-- ------------------ end main ---------------------- -->
+    </div>
+
+    <!-- --------- main javascript -------- -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
